@@ -311,8 +311,8 @@ def configure(keymap):
     # 右Ctrl + PageUp/Down : 音量上下
     keymap_global["RC-PageUp"] = "(175)", "(175)"  # VK_VOLUME_UP x2
     keymap_global["RC-PageDown"] = "(174)", "(174)"  # VK_VOLUME_DOWN x2
-    keymap_global["RC-S-PageUp"] = "(175)"  # VK_VOLUME_UP x2
-    keymap_global["RC-S-PageDown"] = "(174)"  # VK_VOLUME_UP x2
+    keymap_global["RC-S-PageUp"] = "(175)"  # VK_VOLUME_UP
+    keymap_global["RC-S-PageDown"] = "(174)"  # VK_VOLUME_DOWN
 
     ####################################################################################################
     # 基本設定
