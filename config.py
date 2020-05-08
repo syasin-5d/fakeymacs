@@ -128,6 +128,7 @@ from keyhac import *
 
 
 def configure(keymap):
+    keymap_global = keymap.defineWindowKeymap()
 
     ####################################################################################################
     # カスタマイズの設定
@@ -299,6 +300,11 @@ def configure(keymap):
 
     # コマンドのリピート回数の最大値を指定する
     repeat_max = 1024
+
+    # 右Ctrl + カーソルキー : メディアプレイヤー操作
+    keymap_global["RC-Right"] = "(176)"  # VK_MEDIA_NEXT_TRACK
+    keymap_global["RC-Left"] = "(177)"  # VK_MEDIA_PREV_TRACK
+    keymap_global["RC-Up"] = "(179)"  # VK_MEDIA_PLAY_PAUSE
 
     ####################################################################################################
     # 基本設定
