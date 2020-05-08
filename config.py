@@ -130,6 +130,8 @@ from keyhac import *
 def configure(keymap):
     keymap_global = keymap.defineWindowKeymap()
 
+    player = "C:\\Program Files (x86)\\foobar2000\\foobar2000.exe"
+
     ####################################################################################################
     # カスタマイズの設定
     ####################################################################################################
@@ -2232,9 +2234,11 @@ def configure(keymap):
                 # アプリケーションソフト
                 application_items = [
                     [
-                        "Notepad",
-                        keymap.ShellExecuteCommand(None, r"notepad.exe", "",
-                                                   "")
+                        "foobar2000",
+                        keymap.ShellExecuteCommand(
+                            None,
+                            r"C:\Program Files (x86)\foobar2000\foobar2000.exe",
+                            "", "")
                     ],
                     [
                         "Explorer",
@@ -2242,28 +2246,10 @@ def configure(keymap):
                                                    "")
                     ],
                     [
-                        "Cmd",
-                        keymap.ShellExecuteCommand(None, r"cmd.exe", "", "")
-                    ],
-                    [
-                        "MSEdge",
-                        keymap.ShellExecuteCommand(
-                            None,
-                            r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
-                            "", "")
-                    ],
-                    [
                         "Chrome",
                         keymap.ShellExecuteCommand(
                             None,
                             r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
-                            "", "")
-                    ],
-                    [
-                        "Firefox",
-                        keymap.ShellExecuteCommand(
-                            None,
-                            r"C:\Program Files (x86)\Mozilla Firefox\firefox.exe",
                             "", "")
                     ],
                     [
