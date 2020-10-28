@@ -275,7 +275,7 @@ def configure(keymap):
     # window_minimize_key = [["A-r", "A-m"]]
     window_minimize_key = [["A-S-m", "A-m"]]
 
-    window_maximize_key = "A-C-Semicolon"
+    window_maximize_key = "A-C-Quote"
 
     # 仮想デスクトップを切り替えるキーの組み合わせ（前、後 の順）を指定する（複数指定可）
     # （デフォルトキーは、["W-C-Left", "W-C-Right"]）
@@ -729,8 +729,8 @@ def configure(keymap):
                   (ctl_x_prefix_vkey[1], True)
                   and keymap.record_seq[len(keymap.record_seq) - 2] ==
                   (ctl_x_prefix_vkey[0], True)))
-                    and keymap.record_seq[len(keymap.record_seq) -
-                                          3] == (ctl_x_prefix_vkey[1], False)):
+                    and keymap.record_seq[len(keymap.record_seq) - 3]
+                    == (ctl_x_prefix_vkey[1], False)):
                 keymap.record_seq.pop()
                 keymap.record_seq.pop()
                 keymap.record_seq.pop()
