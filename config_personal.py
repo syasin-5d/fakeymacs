@@ -141,7 +141,7 @@ define_key(keymap_global, "RC-S-PageUp", self_insert_command("(175)")) # VK_VOLU
 define_key(keymap_global, "RC-S-PageDown", self_insert_command("(174)")) # VK_VOLUME_DOWN
 
 # do nothing C-l for Corvus SKK
-define_key(keymap_emacs, "C-l", None)
+define_key(keymap_emacs, "C-j", lambda x: None)
 
 ####################################################################################################
 ## クリップボードリストの設定
