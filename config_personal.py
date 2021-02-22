@@ -127,6 +127,8 @@ fc.window_swiching_key = [["C-S-A-i"], ["C-A-i"]]
 fc.window_movement_key_for_displays = [[None, "C-A-x"]]
 fc.window_size_swtich_key = "A-C-Quote"
 
+# [section-base-2] ---------------------------------------------------------------------------------
+
 # Right Ctrl + Cursor key : media player operation
 define_key("RC-Right", "(176)", None) # VK_MEDIA_NEXT_TRACK
 define_key("RC-Left", "(177)", None) # VK_MEDIA_PREV_TRACK
@@ -137,8 +139,6 @@ define_key("RC-PageUp", "(175)" "(175)", None) # VK_VOLUME_UP x2
 define_key("RC-PageDown", "(174)" "(174)", None) # VK_VOLUME_DOWN x2
 define_key("RC-S-PageUp", "(175)", None) # VK_VOLUME_UP
 define_key("RC-S-PageDown", "(174)", None) # VK_VOLUME_DOWN
-
-# [section-base-2] ---------------------------------------------------------------------------------
 
 ####################################################################################################
 ## クリップボードリストの設定
