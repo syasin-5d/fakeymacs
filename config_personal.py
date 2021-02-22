@@ -123,7 +123,7 @@ fc.set_input_method_key += [["(29)", "(28)"]]
 # fc.application_key = "W-m"
 
 #---------------------------------------------------------------------------------------------------
-fc.window_swiching_key = [["C-S-A-i"], ["C-A-i"]]
+fc.window_swiching_key =[["C-S-A-i", "C-A-i"]]
 fc.window_movement_key_for_displays = [[None, "C-A-x"]]
 fc.window_size_switch_key = "A-C-Quote"
 
