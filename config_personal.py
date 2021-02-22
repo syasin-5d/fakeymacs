@@ -61,7 +61,7 @@ fc.vscode_target       += ["chrome.exe",
 # （ここで指定したキーに新たに別のキー設定をしたいときには、「-2」が付くセクション内で define_key2
 #   関数を利用して定義してください）
 fc.skip_settings_key    = {"keymap_global"    : [], # 全画面共通 Keymap
-                           "keymap_emacs"     : [], # Emacs キーバインド対象アプリ用 Keymap
+                           "keymap_emacs"     : ["C-j"], # Emacs キーバインド対象アプリ用 Keymap
                            "keymap_ime"       : [], # IME 切り替え専用アプリ用 Keymap
                            "keymap_ei"        : [], # Emacs 日本語入力モード用 Keymap
                            "keymap_tsw"       : [], # タスク切り替え画面用 Keymap
@@ -139,9 +139,6 @@ define_key(keymap_global, "RC-PageUp", self_insert_command("(175)" "(175)")) # V
 define_key(keymap_global, "RC-PageDown", self_insert_command("(174)" "(174)")) # VK_VOLUME_DOWN x2
 define_key(keymap_global, "RC-S-PageUp", self_insert_command("(175)")) # VK_VOLUME_UP
 define_key(keymap_global, "RC-S-PageDown", self_insert_command("(174)")) # VK_VOLUME_DOWN
-
-# do nothing C-l for Corvus SKK
-define_key(keymap_emacs, "C-j", lambda x: None)
 
 ####################################################################################################
 ## クリップボードリストの設定
