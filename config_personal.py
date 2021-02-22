@@ -85,7 +85,7 @@ fc.side_of_ctrl_key = "L"
 fc.use_esc_as_meta = False
 
 # Emacs日本語入力モードを使うかどうかを指定する（True: 使う、False: 使わない）
-fc.use_emacs_ime_mode = False
+fc.use_emacs_ime_mode = True
 
 # IME をトグルで切り替えるキーを指定する（複数指定可）
 fc.toggle_input_method_key = []
