@@ -128,15 +128,15 @@ fc.window_movement_key_for_displays = [[None, "C-A-x"]]
 fc.window_size_swtich_key = "A-C-Quote"
 
 # Right Ctrl + Cursor key : media player operation
-fc.keymap_global["RC-Right"] = "(176)" # VK_MEDIA_NEXT_TRACK
-fc.keymap_global["RC-Left"] = "(177)" # VK_MEDIA_PREV_TRACK
-fc.keymap_global["RC-Up"] = "(179)" # VK_MEDIA_PLAY_PAUSE
+define_key("RC-Right", "(176)", None) # VK_MEDIA_NEXT_TRACK
+define_key("RC-Left", "(177)", None) # VK_MEDIA_PREV_TRACK
+define_key("RC-Up", "(179)", None) # VK_MEDIA_PLAY_PAUSE
 
 # Right Ctrl + PageUp/Down : Volume Up/Down
-fc.keymap_global["RC-PageUp"] = "(175)" "(175)" # VK_VOLUME_UP x2
-fc.keymap_global["RC-PageDown"] = "(174)" "(174)" # VK_VOLUME_DOWN x2
-fc.keymap_global["RC-S-PageUp"] = "(175)" # VK_VOLUME_UP
-fc.keymap_global["RC-S-PageDown"] = "(174)" # VK_VOLUME_DOWN
+define_key("RC-PageUp", "(175)" "(175)", None) # VK_VOLUME_UP x2
+define_key("RC-PageDown", "(174)" "(174)", None) # VK_VOLUME_DOWN x2
+define_key("RC-S-PageUp", "(175)", None) # VK_VOLUME_UP
+define_key("RC-S-PageDown", "(174)", None) # VK_VOLUME_DOWN
 
 # [section-base-2] ---------------------------------------------------------------------------------
 
