@@ -130,15 +130,15 @@ fc.window_size_switch_key = "A-C-Quote"
 # [section-base-2] ---------------------------------------------------------------------------------
 
 # Right Ctrl + Cursor key : media player operation
-define_key("RC-Right", "(176)", None) # VK_MEDIA_NEXT_TRACK
-define_key("RC-Left", "(177)", None) # VK_MEDIA_PREV_TRACK
-define_key("RC-Up", "(179)", None) # VK_MEDIA_PLAY_PAUSE
+define_key(keymap_global, "RC-Right", self_insert_command("(176)")) # VK_MEDIA_NEXT_TRACK
+define_key(keymap_global, "RC-Left", self_insert_command("(177)")) # VK_MEDIA_PREV_TRACK
+define_key(keymap_global, "RC-Up", self_insert_command("(179)"), None) # VK_MEDIA_PLAY_PAUSE
 
 # Right Ctrl + PageUp/Down : Volume Up/Down
-define_key("RC-PageUp", "(175)" "(175)", None) # VK_VOLUME_UP x2
-define_key("RC-PageDown", "(174)" "(174)", None) # VK_VOLUME_DOWN x2
-define_key("RC-S-PageUp", "(175)", None) # VK_VOLUME_UP
-define_key("RC-S-PageDown", "(174)", None) # VK_VOLUME_DOWN
+define_key(keymap_global, "RC-PageUp", self_insert_command("(175)" "(175)")) # VK_VOLUME_UP x2
+define_key(keymap_global, "RC-PageDown", self_insert_command("(174)" "(174)")) # VK_VOLUME_DOWN x2
+define_key(keymap_global, "RC-S-PageUp", self_insert_command("(175)")) # VK_VOLUME_UP
+define_key(keymap_global, "RC-S-PageDown", self_insert_command("(174)")) # VK_VOLUME_DOWN
 
 ####################################################################################################
 ## クリップボードリストの設定

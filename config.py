@@ -2267,7 +2267,7 @@ def configure(keymap):
 
     # maximize / restore window
     if window_size_switch_key:
-        define_key(keymap_global, window_maximize_key, switch_window_size)
+        define_key(keymap_global, window_size_switch_key, switch_window_size)
 
     # 仮想デスクトップの切り替え
     for previous_key, next_key in fc.desktop_switching_key:
